@@ -1,0 +1,24 @@
+<div class="sidenav">
+  <%= link_to "Traditional", welcome_photos_path %>
+  <%= link_to "Lazy Load", welcome_photos_lazy_load_path %>
+  <%= link_to "WebP", welcome_photos_webp_path %>
+  <%= link_to "WebP+Lazy", welcome_photos_lazy_load_webp_path %>
+
+  <div class="reporting">
+    <h1>Metrics:</h1>
+    <p>
+      <span>Pageload:</span>
+      <span id="loadTime"></span>
+    </p>
+    <p>
+      <span>Images loaded:</span>
+      <span id="imageCounter"></span>
+      <span>/11</span>
+    </p>
+    <p>
+      <span>JS fire:</span>
+      <span id="jsCounter"></span><br>
+      <input type="checkbox" id="throttle" checked> Toggle Throttling<br>
+    </p>
+  </div>
+</div>
